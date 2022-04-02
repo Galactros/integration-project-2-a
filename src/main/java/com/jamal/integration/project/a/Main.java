@@ -1,21 +1,17 @@
 package com.jamal.integration.project.a;
 
-import com.jamal.integration.project.a.service.PacienteListInsert;
-import com.jamal.integration.project.a.service.VacinaListInsert;
-import com.jamal.integration.project.a.service.VinculoListInsert;
+import com.jamal.integration.project.a.service.QuestaoInsert;
+import com.jamal.integration.project.a.service.RespostaInsert;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        PacienteListInsert insertListPacientes = new PacienteListInsert();
+        QuestaoInsert insertQuestao = new QuestaoInsert();
 
-        VacinaListInsert insertListVacinas = new VacinaListInsert();
+        RespostaInsert insertResposta = new RespostaInsert();
 
-        VinculoListInsert insertviculos = new VinculoListInsert();
-
-        insertListPacientes.insertPaciente();
-        insertListVacinas.insertVacina();
-        insertviculos.insertVinculo();
+        insertQuestao.insertQuestao();
+        insertResposta.insertResposta();
     }
 }

@@ -25,7 +25,7 @@ public class QuestaoInsert {
         int countInserts = 0;
 
         for (int i = 0; i < questoes.size(); i++) {
-            app.insertPaciente(questoes.get(i));
+            app.insertQuestao(questoes.get(i));
             countInserts++;
         }
 

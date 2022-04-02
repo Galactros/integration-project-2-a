@@ -25,7 +25,7 @@ public class RespostaInsert {
         int countInserts = 0;
 
         for (int i = 0; i < respostas.size(); i++) {
-            app.insertPaciente(respostas.get(i));
+            app.insertResposta(respostas.get(i));
             countInserts++;
         }
 
