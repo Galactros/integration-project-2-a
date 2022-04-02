@@ -17,25 +17,11 @@ CREATE TABLE IF NOT EXISTS public.resposta
     resposta character varying NOT NULL,
     resposta_correta boolean NOT NULL,
     id_questao bigint NOT NULL,
-    PRIMARY KEY (id_questao)
+    PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.resposta_questao
-(
-    resposta_id_questao bigint NOT NULL,
-    questao_id bigint NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 )
-);
-
-ALTER TABLE IF EXISTS public.resposta_questao
-    ADD FOREIGN KEY (resposta_id_questao)
-    REFERENCES public.resposta (id_questao) MATCH SIMPLE
-    ON UPDATE NO ACTION
-    ON DELETE NO ACTION
-    NOT VALID;
-
-
-ALTER TABLE IF EXISTS public.resposta_questao
-    ADD FOREIGN KEY (questao_id)
+ALTER TABLE IF EXISTS public.resposta
+    ADD FOREIGN KEY (id_questao)
     REFERENCES public.questao (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
