@@ -10,15 +10,13 @@ public class RespostaInsert {
 
         ArrayList<Resposta> respostas = new ArrayList<>();
 
-        Resposta resposta1 = new Resposta("Resposta1", true, 1);
-        Resposta resposta2 = new Resposta("Resposta2", false, 2);
-        Resposta resposta3 = new Resposta("Resposta3", true, 3);
-        Resposta resposta4 = new Resposta("Resposta4", false, 4);
+        Resposta resposta1 = new Resposta("A negligenciação a qual homens e mulheres, identificados como pretos ou pardos são submetidos ao longo da vida.", true, 1);
+        Resposta resposta2 = new Resposta("1888", false, 2);
+        Resposta resposta3 = new Resposta("A tecnologia exerce um papel muito importante na comunicação, propagação da informação e na forma como aprendemos.", true, 3);
 
         respostas.add(resposta1);
         respostas.add(resposta2);
         respostas.add(resposta3);
-        respostas.add(resposta4);
 
         PostgresConnection app = new PostgresConnection();
 

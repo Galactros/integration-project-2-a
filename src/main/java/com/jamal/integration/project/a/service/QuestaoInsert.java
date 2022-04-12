@@ -10,15 +10,13 @@ public class QuestaoInsert {
 
         ArrayList<Questao> questoes = new ArrayList<>();
 
-        Questao questao1 = new Questao("Questao1", "Multipla Escolha");
-        Questao questao2 = new Questao("Questao2", "Multipla Escolha");
-        Questao questao3 = new Questao("Questao3", "Multipla Escolha");
-        Questao questao4 = new Questao("Questao4", "Multipla Escolha");
+        Questao questao1 = new Questao("As desigualdades raciais e sociais expressam oque recorrentemente?", "Multipla Escolha");
+        Questao questao2 = new Questao("Em que ano foi criada a Lei Áurea?", "Multipla Escolha");
+        Questao questao3 = new Questao("Como tecnologia exerce um papel para resolver o problema das desigualdades raciais e sociais?", "Multipla Escolha");
 
         questoes.add(questao1);
         questoes.add(questao2);
         questoes.add(questao3);
-        questoes.add(questao4);
 
         PostgresConnection app = new PostgresConnection();
 
