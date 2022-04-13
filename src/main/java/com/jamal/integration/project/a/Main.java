@@ -1,17 +1,13 @@
 package com.jamal.integration.project.a;
 
-import com.jamal.integration.project.a.service.QuestaoInsert;
-import com.jamal.integration.project.a.service.RespostaInsert;
+import com.jamal.integration.project.a.service.QuestionarioService;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        QuestaoInsert insertQuestao = new QuestaoInsert();
+        QuestionarioService questionarioService = new QuestionarioService();
 
-        RespostaInsert insertResposta = new RespostaInsert();
-
-        insertQuestao.insertQuestao();
-        insertResposta.insertResposta();
+        questionarioService.questionarioActions();
     }
 }
